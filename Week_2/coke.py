@@ -12,7 +12,7 @@ def main():
         amount_owed = neg[1:]
         print(int(amount_owed))
     else:
-        print("Amount Owed: ", amount_dued)
+        print("Change Owed: ", amount_dued)
 
 
 
