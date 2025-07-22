@@ -1,4 +1,3 @@
-
 def main():
     user_input = input("Say something with am emotion: \n")
     output = convert_to_emoji(user_input)
@@ -10,7 +9,7 @@ def convert_to_emoji(user_input):
         converted = user_input.replace(":)", "😊")
         return converted
     elif ":(" in user_input:
-        converted = user_input.replace(":(","🙁")
+        converted = user_input.replace(":(", "🙁")
         return converted
     else:
         return user_input

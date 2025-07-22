@@ -7,14 +7,15 @@ def main():
 
 def dollars_to_float(d):
     if "$" in d:
-        dollar = d.replace("$","")
+        dollar = d.replace("$", "")
         return float(dollar)
     else:
         return float(d)
 
+
 def percent_to_float(p):
     if "%" in p:
-        percentage = p.replace("%","")
+        percentage = p.replace("%", "")
         per = float(percentage)
         return per / 100
     else:

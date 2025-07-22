@@ -1,19 +1,18 @@
-
-
 def main():
     time = input("What time is it? ")
     converted_time = convert(time)
     print(meal(converted_time))
 
+
 def convert(time):
 
-    hours , minutes = time.split(":")
+    hours, minutes = time.split(":")
     minutes = int(minutes) / 60
     m = str(minutes)
     if m.startswith("0."):
         new_minutes = m[2:]
-        new_time = hours+ "." + new_minutes
-        #print(new_time)
+        new_time = hours + "." + new_minutes
+        # print(new_time)
     return float(new_time)
 
 
@@ -33,10 +32,8 @@ def meal(converted_time):
     elif time > 18 and time < 19:
         return "dinner time"
     else:
-        return
-
+        return ""
 
 
 if __name__ == "__main__":
     main()
-

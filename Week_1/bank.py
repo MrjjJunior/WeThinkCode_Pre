@@ -1,5 +1,3 @@
-
-
 def main():
     usr_input = input("Greeting: ")
     print(bank(usr_input.lower()))
@@ -16,4 +14,3 @@ def bank(usr_input):
 
 if __name__ == "__main__":
     main()
-
