@@ -1,8 +1,5 @@
-def main():
-    usr_input = input("Item: ")
-    print(shop(usr_input))
 
-def shop(item):
+def main():
     price_list = {
         "Baja Taco": 4.25,
         "Burrito": 7.50,
@@ -14,15 +11,17 @@ def shop(item):
         "Taco": 3.00,
         "Tortilla Salad": 8.00
         }
-    item = item.capitalize()
     try:
-        while item != "":
+        total = 0
+        while True:
+            item = input("Item: ").capitalize()
+            if item == "":
+                break
             if item in price_list:
-                price = float(price_list[item])
-        return "Total: $"+str(price)
+                total = total + price_list[item]
+            print("Total: $",total)
     except EOFError:
-        main()
-
+        print("Done")
 
 
 if __name__ == "__main__":
