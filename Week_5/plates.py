@@ -9,10 +9,11 @@ def main():
 def is_valid(s):
     lttrs = "QWERTYUIOPASDFGHJKLZXCVBNM"
     if s[0:1] in lttrs:
-        return True   
+        return True
     if s > 2 and s < 6:
         ...
 
+
 print("Hello")
 if __name__ == "__main__":
-    main()  
+    main()

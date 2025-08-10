@@ -1,4 +1,3 @@
-
 def main():
     word = input("Input: ")
     print("Ouput: ", shorten(word))
